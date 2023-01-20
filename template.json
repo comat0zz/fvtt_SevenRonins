@@ -1,0 +1,68 @@
+{
+  "Actor": {
+    "types": [
+      "hero",
+      "enemy"
+    ],
+    "templates": {
+      "baseActor": {
+        "description": "",
+        "items": []
+      }
+    },
+    "hero": {
+      "templates": ["baseActor"],
+      "playbook": "",
+      "attrs": {
+        "rage": {
+          "value": 0,
+          "equilibrium": true
+        },
+        "cunning": {
+          "value": 0,
+          "equilibrium": true
+        },
+        "wisdom": {
+          "value": 0,
+          "equilibrium": true
+        },
+        "fate": {
+          "value": 0,
+          "equilibrium": true
+        }
+      },
+      "sight": "",
+      "features": "",
+      "weapons": "",
+      "relationships": []
+      
+    },
+    "enemy": {
+      "templates": ["baseActor"]
+    }
+  },
+  "Item": {
+    "types": [
+      "weapon",
+      "armor",
+      "equipment"
+    ],
+    "templates": {
+      "baseItem": {
+        "description": "",
+        "formula": ""
+      }
+    },
+    "weapon": {
+      "templates": ["baseItem"]
+    },
+    "movies": {
+      "templates": ["baseItem"],
+      "attrs": [],
+      "playbook": []
+    },
+    "equipment": {
+      "templates": ["baseItem"]
+    }
+  }
+}
